@@ -16,8 +16,12 @@ A **TypeScript** type definitions package for listeners.
 
 ## Features
 
-- **Feature 1**: Description.
-- **Feature 2**: Description.
+- **Shape**: A type-safe shape for `Listeners` based on collections.
+- **Adapter**: The shape of the adapter based on `Listeners` shape allowing for pluggable and customizable collection logic.
+- **Function**: The listener function type with arbitrary arguments.
+- **Storage**: Exact type (`Set`, `Array` or custom) of the underlying storage as generic variable `T`.
+- **Asynchronous**: The generic parameter `R` controls asynchronous and synchronous operations through the `AsyncReturn` type.
+- **Listener function arguments**: Precisely types the arguments that the listener function arguments receive.
 
 ## Table of contents
 
