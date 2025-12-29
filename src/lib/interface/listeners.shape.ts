@@ -30,7 +30,7 @@ export interface ListenersShape<
 
   /**
    * @description Returns a snapshot of the current listeners in the collection.
-   * @returns {AsyncReturn<L[], R>} 
+   * @returns {AsyncReturn<R, L[]>} An array of listener functions.
    */
-  snapshot(): AsyncReturn<L[], R>;
+  snapshot(): AsyncReturn<R, L[]>;
 }
