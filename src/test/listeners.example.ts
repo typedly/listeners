@@ -8,17 +8,21 @@ export class Listeners<
   T = Set<L>,
   R extends boolean = false
 > implements ListenersShape<G, L, T, R> {
+  async: R = false as R;
   add(...items: L[]): AsyncReturn<R, this> {
     return this as unknown as AsyncReturn<R, this>;
   }
   once(...listener: L[]): AsyncReturn<R, this> {
     return this as unknown as AsyncReturn<R, this>;
   }
-  snapshot(): AsyncReturn<L[], R> {
-    return [] as unknown as AsyncReturn<L[], R>;
+  snapshot(): AsyncReturn<R, L[]> {
+    return [] as unknown as AsyncReturn<R, L[]>;
   }
   delete(...items: L[]): AsyncReturn<R, boolean> {
     return false as unknown as AsyncReturn<R, boolean>;
+  }
+  getValue(): AsyncReturn<R, T> {
+    return new Set<L>() as unknown as AsyncReturn<R, T>;
   }
   has(...item: L[]): AsyncReturn<R, boolean> {
     return false as unknown as AsyncReturn<R, boolean>;
@@ -41,7 +45,7 @@ export class Listeners<
   lock(): this {
     return this;
   }
-  set(value: T): AsyncReturn<R, this> {
+  setValue(value: T): AsyncReturn<R, this> {
     return this as unknown as AsyncReturn<R, this>;
   }
 }
