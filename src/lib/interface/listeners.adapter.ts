@@ -15,8 +15,8 @@ import { ListenersShape } from "./listeners.shape";
 export interface ListenersAdapter<
   G extends any[],
   L extends ListenerFunction<G>,
-  T,
+  T extends Iterable<L>,
   R extends boolean
 > extends ListenersShape<G, L, T, R> {
-  version: string;
+  readonly version: string;
 }
