@@ -8,9 +8,19 @@
 ## @typedly/listeners
 
 <!-- npm badge -->
-[![npm version][typedly-npm-badge-svg]][typedly-npm-badge]
-[![GitHub issues][typedly-badge-issues]][typedly-issues]
-[![GitHub license][typedly-badge-license]][typedly-license]
+[![npm version][package-npm-badge-svg]][package-npm-badge]
+[![GitHub issues][package-badge-issues]][package-issues]
+[![GitHub license][package-badge-license]][package-license]
+
+<!-- GitHub badges -->
+[![GitHub issues][package-badge-issues]][package-issues]
+[![GitHub forks][package-badge-forks]][package-forks]
+[![GitHub stars][package-badge-stars]][package-stars]
+[![GitHub license][package-badge-license]][package-license]
+
+<!-- Sponsors -->
+[![GitHub Sponsors][github-badge-sponsor]][github-sponsor-link]
+[![Patreon Sponsors][patreon-badge]][patreon-link]
 
 A **TypeScript** type definitions package for listeners.
 
@@ -44,6 +54,14 @@ A **TypeScript** type definitions package for listeners.
 
 ## Installation
 
+### 1. Install peer dependencies
+
+```bash
+npm install @typedly/collection --save-peer
+```
+
+### 2. Install the package
+
 ```bash
 npm install @typedly/listeners --save-peer
 ```
@@ -64,11 +82,15 @@ import {
 
 ### `ListenersAdapter`
 
+The adapter interface for Listeners collection.
+
 ```typescript
 import { ListenersAdapter } from '@typedly/listeners';
 ```
 
 ### `ListenersShape`
+
+The shape of a Listeners collection.
 
 ```typescript
 import { ListenersShape } from '@typedly/listeners';
@@ -77,6 +99,8 @@ import { ListenersShape } from '@typedly/listeners';
 ### Type
 
 ### `ListenerFunction`
+
+The listener function type.
 
 ```typescript
 import { ListenerFunction } from '@typedly/listeners';
@@ -147,7 +171,7 @@ How do I know when to release 1.0.0?
 
 ## License
 
-MIT © typedly ([license][typedly-license])
+MIT © typedly ([license][package-license])
 
 ## Related packages
 
@@ -168,23 +192,29 @@ MIT © typedly ([license][typedly-license])
 - **[@typedly/regexp](https://github.com/typedly/regexp)**: A **TypeScript** type definitions package for `RegExp`.
 - **[@typedly/symbol](https://github.com/typedly/symbol)**: A **TypeScript** type definitions package for various symbols.
 
+<!-- Funding -->
+[github-badge-sponsor]: https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&link=https://github.com/sponsors/angular-package
+[github-sponsor-link]: https://github.com/sponsors/angular-package
+[patreon-badge]: https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.vercel.app%2Fapi%3Fusername%3Dangularpackage%26type%3Dpatrons&style=flat
+[patreon-link]: https://www.patreon.com/join/angularpackage/checkout?fan_landing=true&rid=0
+
 <!-- This package: typedly  -->
   <!-- GitHub: badges -->
-  [typedly-badge-issues]: https://img.shields.io/github/issues/typedly/listeners
-  [typedly-badge-forks]: https://img.shields.io/github/forks/typedly/listeners
-  [typedly-badge-stars]: https://img.shields.io/github/stars/typedly/listeners
-  [typedly-badge-license]: https://img.shields.io/github/license/typedly/listeners
+  [package-badge-issues]: https://img.shields.io/github/issues/typedly/listeners
+  [package-badge-forks]: https://img.shields.io/github/forks/typedly/listeners
+  [package-badge-stars]: https://img.shields.io/github/stars/typedly/listeners
+  [package-badge-license]: https://img.shields.io/github/license/typedly/listeners
   <!-- GitHub: badges links -->
-  [typedly-issues]: https://github.com/typedly/listeners/issues
-  [typedly-forks]: https://github.com/typedly/listeners/network
-  [typedly-license]: https://github.com/typedly/listeners/blob/master/LICENSE
-  [typedly-stars]: https://github.com/typedly/listeners/stargazers
+  [package-issues]: https://github.com/typedly/listeners/issues
+  [package-forks]: https://github.com/typedly/listeners/network
+  [package-license]: https://github.com/typedly/listeners/blob/master/LICENSE
+  [package-stars]: https://github.com/typedly/listeners/stargazers
 <!-- This package -->
 
 <!-- Package: typedly -->
   <!-- npm -->
-  [typedly-npm-badge-svg]: https://badge.fury.io/js/@typedly%2Flisteners.svg
-  [typedly-npm-badge]: https://badge.fury.io/js/@typedly%2Flisteners
+  [package-npm-badge-svg]: https://badge.fury.io/js/@typedly%2Flisteners.svg
+  [package-npm-badge]: https://badge.fury.io/js/@typedly%2Flisteners
 
 <!-- GIT -->
 [git-semver]: http://semver.org/
