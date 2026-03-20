@@ -35,6 +35,7 @@ A **TypeScript** type definitions package for listeners.
 
 ## Table of contents
 
+- [Related packages](#related-packages)
 - [Installation](#installation)
 - [Api](#api)
   - Interface
@@ -49,8 +50,11 @@ A **TypeScript** type definitions package for listeners.
   - [Commit](#commit)
   - [Versioning](#versioning)
 - [License](#license)
-- [Related packages](#related-packages)
 - [Packages](#packages)
+
+## Related packages
+
+- **[@typedly/collection](https://github.com/typedly/collection)**: A **TypeScript** type definitions package for data collections with customizable storage.
 
 ## Installation
 
@@ -172,10 +176,6 @@ How do I know when to release 1.0.0?
 ## License
 
 MIT © typedly ([license][package-license])
-
-## Related packages
-
-- **[@typedly/collection](https://github.com/typedly/collection)**: A **TypeScript** type definitions package for data collections with customizable storage.
 
 ## Packages
 
